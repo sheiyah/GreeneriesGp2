@@ -1,0 +1,913 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+
+/* ================= GLOBAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    display: flex;
+    position: absolute;
+
+    top: 40px;
+    left: 0;
+
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 7%;
+
+    color: whitesmoke;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: whitesmoke;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b7e4c7;
+}
+
+
+/* ================= HAMBURGER ================= */
+
+.menu-toggle {
+    display: none;
+
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 28px;
+    height: 3px;
+
+    margin: 5px;
+
+    background: white;
+}
+
+
+/* ================= BUTTON ================= */
+
+.ctn {
+    display: inline-block;
+
+    padding: 10px 22px;
+
+    background: #287a35;
+
+    border-radius: 30px;
+
+    color: whitesmoke;
+
+    font-weight: 600;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+}
+
+.ctn:hover {
+    background: #174d20;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    width: 100%;
+    height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+        ),
+        url('./Img/plantsbg3.avif');
+
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+}
+
+.header-content {
+    margin-bottom: 150px;
+
+    color: whitesmoke;
+
+    text-align: center;
+
+    max-width: 900px;
+
+    padding: 20px;
+
+    animation: fadeUp 1s ease;
+}
+
+.header-content h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 2rem;
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+.header-content h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 4rem;
+
+    font-weight: 700;
+}
+
+.header-content p {
+    margin-top: 15px;
+
+    font-size: 1rem;
+}
+
+
+/* ================= LINE ================= */
+
+.line {
+    width: 150px;
+
+    height: 4px;
+
+    background: white;
+
+    margin: 0 auto 15px;
+}
+
+
+/* ================= TITLES ================= */
+
+.title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.title h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 10px;
+}
+
+.title p {
+    margin-top: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 100px 10%;
+
+    background: #f5f8f3;
+}
+
+.about-content {
+    display: flex;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.about-text {
+    max-width: 800px;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+}
+
+
+/* ================= PLANTS ================= */
+
+.plants {
+    padding: 100px 8%;
+}
+
+.plant-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.plant-card {
+    flex: 1;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    background: #f5f8f3;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.plant-card:hover {
+    transform: translateY(-10px);
+}
+
+.plant-icon {
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+.plant-card h2 {
+    font-family: 'Playfair Display', serif;
+
+    margin-bottom: 20px;
+}
+
+.plant-card p {
+    line-height: 1.7;
+}
+
+
+/* ================= PLANTING ================= */
+
+.planting {
+    padding: 100px 8%;
+
+    background: #eef5eb;
+}
+
+.planting-content {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.planting-content > p {
+    max-width: 850px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+
+    line-height: 1.8;
+}
+
+.steps {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.step {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.step span {
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: #287a35;
+}
+
+.step h3 {
+    margin: 15px 0;
+
+    font-family: 'Playfair Display', serif;
+}
+
+.step p {
+    line-height: 1.6;
+
+    font-size: 0.9rem;
+}
+
+
+/* ================= SCIENCE ================= */
+
+.science {
+    min-height: 65vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('./Img/plantsbg3.avif');
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 80px 10%;
+}
+
+.science-content {
+    max-width: 800px;
+
+    color: white;
+
+    text-align: center;
+}
+
+.science-content h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 3rem;
+}
+
+.science-content p {
+    line-height: 1.8;
+}
+
+
+/* ================= TOPICS ================= */
+
+.topics {
+    padding: 100px 8%;
+}
+
+.topic-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.topic-card {
+    padding: 35px;
+
+    border-left: 5px solid #287a35;
+
+    background: #f5f8f3;
+
+    border-radius: 8px;
+}
+
+.topic-card h2 {
+    font-family: 'Playfair Display', serif;
+
+    margin-bottom: 15px;
+}
+
+.topic-card p {
+    line-height: 1.7;
+}
+
+.formula {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: white;
+
+    text-align: center;
+
+    font-weight: 700;
+}
+
+
+/* ================= EXPLORE ================= */
+
+.explore {
+    width: 100%;
+
+    min-height: 70vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('./Img/plantsbg3.avif');
+
+    background-position: center;
+
+    background-size: cover;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 80px 10%;
+}
+
+.explore-content {
+    color: white;
+
+    text-align: center;
+
+    max-width: 800px;
+}
+
+.explore-content h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 3rem;
+}
+
+.explore-content p {
+    line-height: 1.8;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery {
+    padding: 100px 8%;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.gallery-item {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+.gallery-item img {
+    height: 350px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-caption {
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    padding: 25px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.8)
+        );
+}
+
+.gallery-caption h3 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 1.5rem;
+}
+
+
+/* ================= DONORS ================= */
+
+.donors {
+    padding: 100px 8%;
+    background: #f5f8f3;
+}
+
+.donor-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.donor-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #287a35;
+}
+
+.donor-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #173b1a;
+}
+
+.donor-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.donor-card li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+/* ================= SURVEY ================= */
+
+.survey {
+    padding: 100px 10%;
+}
+
+.survey-content {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.survey-text {
+    flex: 1;
+}
+
+.survey-content h2 {
+    font-family: 'Playfair Display', serif;
+
+    margin-bottom: 20px;
+}
+
+.survey-content p {
+    line-height: 1.8;
+}
+
+
+/* ================= QR CODE ================= */
+
+.qr-box {
+    text-align: center;
+}
+
+.qr-box img {
+    width: 160px;
+
+    height: 160px;
+
+    object-fit: contain;
+
+    background: white;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.qr-box p {
+    margin-top: 10px;
+
+    font-weight: 600;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: #173b1a;
+
+    color: white;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 10px;
+}
+
+.footer-line {
+    width: 80px;
+
+    height: 2px;
+
+    background: white;
+
+    margin: 20px auto;
+}
+
+.copyright {
+    font-size: 0.85rem;
+
+    opacity: 0.7;
+}
+
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================= TABLET ================= */
+
+@media only screen and (max-width: 900px) {
+
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 80px;
+
+        right: 5%;
+
+        width: 200px;
+
+        padding: 20px;
+
+        background: rgba(23, 59, 26, 0.95);
+
+        border-radius: 10px;
+
+        flex-direction: column;
+
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 12px 0;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+    }
+
+    .plant-container {
+        flex-direction: column;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= PHONE ================= */
+
+@media only screen and (max-width: 600px) {
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    .logo-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .header-content {
+        margin-bottom: 90px;
+    }
+
+    .header-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .header-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-content p {
+        font-size: 0.85rem;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .about,
+    .plants,
+    .planting,
+    .topics,
+    .gallery,
+    .donors,
+    .survey {
+        padding: 70px 7%;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .topic-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 280px;
+    }
+
+    .explore-content h1,
+    .science-content h1 {
+        font-size: 2rem;
+    }
+
+    .survey-content {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+/* ================= MARQUEE ================= */
+
+.marquee {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(23, 59, 26, 0.95);
+    color: white;
+    padding: 10px 0;
+    z-index: 1001;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: marquee 35s linear infinite;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
